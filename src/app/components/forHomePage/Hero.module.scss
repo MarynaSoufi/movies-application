@@ -1,0 +1,14 @@
+.hero {
+  margin: 0 auto;
+  padding: 0 8.75rem;
+  max-width: 102.625rem;
+  margin-bottom: 4rem;
+ 
+  &__image__wrapper {
+    height: 400px;
+    background-image: url('https://allears.net/wp-content/uploads/2021/02/Pixar-Soul-.jpeg');
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    
+  }
+}

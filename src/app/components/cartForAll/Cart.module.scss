@@ -1,0 +1,47 @@
+.cart {
+  width: 15%;
+  font-family: 'Roboto';
+  font-size: 1.125rem;
+  transition: all .4s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &__link{
+    text-decoration: none;
+  }
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1.46875rem;
+    
+    &__title {
+      font-weight: bold;
+      width: 100%;
+      padding-bottom: .5rem;
+     
+    }
+    &__vote {
+      font-weight: normal;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: .5rem;
+      &__icon {
+        width: 1.5rem;
+       margin-right: .3rem;
+       
+      }
+    
+    }
+    &__date {
+      font-weight: 300;
+      width: 100%;
+      color: #cccccc
+     
+    }
+  }
+ 
+}

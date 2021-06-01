@@ -1,0 +1,15 @@
+.score__item {
+  width: 33%;
+  margin-bottom: 1.5rem;
+  padding-right: 1rem;
+  &__button{
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #87CED9;
+    color: white;
+    font-size: 1.125rem;
+    font-family: 'Roboto';
+  }
+}

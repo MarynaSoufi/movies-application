@@ -1,0 +1,26 @@
+// #0068AC
+
+.header {
+  background-color: #032541;
+  color: white;
+  &__wrapper {
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 0 auto;
+    padding: 0 8.75rem;
+    max-width: 102.625rem;
+  }
+  &__dark {
+    background-color: #032541;
+  }
+  &__light {
+    background-color: #0068AC;
+  }
+
+  
+ 
+}

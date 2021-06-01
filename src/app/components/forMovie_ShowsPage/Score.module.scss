@@ -1,0 +1,17 @@
+.score {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: .5rem;
+  border: 1px solid #ccc;
+  &__text {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

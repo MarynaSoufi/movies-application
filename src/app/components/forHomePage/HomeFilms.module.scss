@@ -1,0 +1,17 @@
+.films {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.films__titel {
+  margin-bottom: 2.75rem;
+  font-size: 1.375rem;
+  text-align: left;
+  font-weight: bold;
+}
+.film__wrapper {
+  margin: 0 auto;
+  padding: 0 8.75rem;
+  max-width: 102.625rem;
+}
