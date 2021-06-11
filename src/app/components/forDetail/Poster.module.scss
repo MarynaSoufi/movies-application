@@ -1,0 +1,12 @@
+@media (min-width: 280px) {
+  .poster {
+    width: 100%;
+  } 
+}
+
+@media (min-width: 768px) {
+  .poster {
+    width: 30%;
+    display: flex;
+  }
+}

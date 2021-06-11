@@ -1,0 +1,32 @@
+
+.filter__holder {
+  width:35%;
+  margin-bottom: 4rem;
+}
+.filter__hide {
+  display: none;
+}
+.filter__active{
+  display: block;
+}
+.holder {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: .5rem;
+  border-radius: .5rem;
+  &__dark {
+    border: 1px solid #032541;
+  }
+  &__icon {
+    width: 2rem;
+    cursor: pointer;
+    transform: rotate(90deg);
+    &__up {
+      transform: rotate(-90deg);
+    }
+
+  }
+ 
+}

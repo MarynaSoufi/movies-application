@@ -1,0 +1,24 @@
+
+.types {
+  margin: 0 auto;
+  padding: 0 8.75rem;
+  width: 102.625rem;
+  &__list {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
+  &__item {
+    
+      font-weight: bold;
+      font-family: 'Roboto';
+      font-size: 1.375rem;
+      cursor: pointer;
+    &__active {
+      color: red;
+    }
+    
+  }
+  }
+}

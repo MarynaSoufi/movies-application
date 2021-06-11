@@ -1,0 +1,16 @@
+.footer {
+  background-color: #032541;
+  
+  &__text {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+  }
+  
+  &__dark {
+    background-color: #032541;
+  }
+  &__light {
+    background-color: #0068AC;
+  }
+}
