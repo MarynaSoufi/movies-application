@@ -1,10 +1,8 @@
 import axios from '../axios/axios';
 import { useState, useEffect } from 'react';
 
-const UseFetch = (apiUrl) => {
-  const [data, setData] = useState([]);
-  const [error, setError] = useState(null)
-      
+const useFetch = (apiUrl) => {
+  const [data, setData] = useState([]);   
   useEffect(async () => {
     console.log('GETTING NEW DATA');
       try {
@@ -12,14 +10,14 @@ const UseFetch = (apiUrl) => {
         setData(res.data.results);
         
       }catch (error) {
-        setError(error.message)
-      } 
+        console.error(error);
+      }
      
     }, [apiUrl]
     
   )
-  return [data, error]
+  return [data]
  
 }
 
-export default UseFetch
+export default useFetch;

@@ -1,5 +1,13 @@
-.movie {
-  margin: 0 auto;
-  padding: 0 8.75rem;
-  width: 102.625rem;
+// .movie {
+//   margin: 0 auto;
+//   padding: 0 8.75rem;
+//   width: 102.625rem;
+// }
+
+@media(min-width: 280px) {
+  .movie {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 102.625rem;
+  }
 }

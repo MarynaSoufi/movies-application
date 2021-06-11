@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { BaseLayout }  from '../layouts'
 import {Detail} from '../components/forDetail'
 import Usetext from '../hooks/Usetext'
@@ -10,7 +8,7 @@ const DetailPage = () => {
   const params = Usetext();
   let paramType = params.get('type');
   let paramId = params.get('id');
-  // const [type, setType] = useState(`/${paramType}/${paramId}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
+
 
   let dataDetail = UseFetchDetail(`/${paramType}/${paramId}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
   let dataCast = UseFetchCast(`/${paramType}/${paramId}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`)

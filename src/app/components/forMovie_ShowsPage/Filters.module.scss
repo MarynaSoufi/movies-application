@@ -16,6 +16,9 @@
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   padding: .5rem;
   border-radius: .5rem;
+  &__dark {
+    border: 1px solid #032541;
+  }
   &__icon {
     width: 2rem;
     cursor: pointer;

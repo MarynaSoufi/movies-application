@@ -45,3 +45,14 @@
   }
  
 }
+@media(min-width: 290px) {
+  .cart {
+    width: 48%;
+  }
+}
+
+@media(min-width: 768px) {
+  .cart {
+    width: 15%;
+  }
+}

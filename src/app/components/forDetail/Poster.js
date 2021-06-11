@@ -10,7 +10,7 @@ const Poster = ({data}) => {
  
   return (
     <div className={styles.poster}>
-      <img src={`${requests.posterUrl}${poster_path}`} alt="poster"></img>
+      <img className={styles.poster__image} src={`${requests.posterUrl}${poster_path}`} alt="poster"></img>
     </div>
   )
 }

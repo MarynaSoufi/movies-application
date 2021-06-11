@@ -1,8 +1,18 @@
-.content {
-  margin: 0 auto;
-  padding: 0 8.75rem;
-  max-width: 102.625rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+// .content {
+//   margin: 0 auto;
+//   padding: 0 8.75rem;
+//   max-width: 102.625rem;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }
+@media(min-width: 280px) {
+  .content {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 102.625rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

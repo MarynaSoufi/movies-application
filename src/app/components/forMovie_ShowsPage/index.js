@@ -1,5 +1,6 @@
 import Filters from './Filters';
 import FilmContent from './FilmContent';
+import FilmDiscover from './FilmDiscover';
 import Genres from './Genres';
 import GenresItem from './GenresItem';
 import KeyWords from './KeyWords';
@@ -13,6 +14,7 @@ import TypeListShows from './TypeListShows';
 export {
   Filters,
   FilmContent,
+  FilmDiscover,
   Genres,
   GenresItem,
   KeyWords,

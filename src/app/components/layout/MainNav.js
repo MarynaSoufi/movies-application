@@ -11,7 +11,7 @@ const MainNav = () => {
     <ul className={styles.navigation__list}>
     <li className={styles.navigation__list__item}>
         <NavLink exact to={Routes.HOME}>
-        <img className={styles.navigation__list__item__icon} src={logo}></img>
+        <img className={styles.navigation__list__item__icon} src={logo} alt="logo"></img>
         </NavLink>
       </li>
       <li className={styles.navigation__list__item}>

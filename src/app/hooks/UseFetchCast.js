@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 
 const UseFetchCast = (API_URL) => {
   const [data, setData] = useState([]);
-      
   useEffect(async () => {
       try {
         const res = await axios.get(API_URL);

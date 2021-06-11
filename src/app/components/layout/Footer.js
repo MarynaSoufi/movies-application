@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Footer.module.scss';
 import classNames from 'classnames'
-import {ThemeProvider,  useThemeContext, ThemeContext } from '../../context'
+import { useThemeContext } from '../../contexts'
 const Footer = () => {
   const {isDarkMode} = useThemeContext();
   return (

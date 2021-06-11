@@ -1,11 +1,12 @@
 import React from 'react'
-import styles from './Cast.module.scss'
+import styles from './Cast.module.scss';
+import requests from '../../requests/requests';
 const Cast = ({cast}) => {
-  // const { name, original_name} = cast;
   console.log(cast);
-  console.log(cast);
+
   return (
-    <li>
+    <li className={styles.castitem}>
+      <img src={`${requests.imageUrl}${cast.profile_path}`} alt="poster-cast"></img>
       <p className={styles.cart__info__title}>{cast.original_name}</p>
     </li>
   )

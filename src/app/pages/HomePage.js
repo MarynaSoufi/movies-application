@@ -1,7 +1,7 @@
 import React from 'react'
 import { BaseLayout }  from '../layouts'
 import { HomeFilms, Hero } from '../components/forHomePage'
-import useFetch from '../hooks/UseFetch.js'
+import useFetch from '../hooks/useFetch.js'
 import requests  from '../requests/requests'
 
 const HomePage = () => {

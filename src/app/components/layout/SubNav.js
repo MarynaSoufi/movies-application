@@ -1,14 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react'
 import {
-  Link
+  Link, useHistory
 } from "react-router-dom";
 import * as Routes from '../../routes'
 import styles from './SubNav.module.scss';
 import account from '../../assets/person_black_24dp.svg'
+import icon from '../../assets/search.svg'
 
 const SubNav = () => {
   const [text, setText] = useState('');
 
+  const history = useHistory();
   const handleText = (e) => {
     setText(e.target.value);
   }
@@ -20,9 +22,9 @@ const SubNav = () => {
 
   const onKeyPressHandler = (e) => {
     if (e.keyCode === 13) {
-      console.log('do validate');
-     }
-     }
+      history.push(`/search?text=${text}`)
+    }
+  }
   return (
   <nav className={styles.navigation}>
     <ul className={styles.navigation__list}>
@@ -31,13 +33,12 @@ const SubNav = () => {
             <img src={account} alt="persone_icon"></img>
           </Link>
       </li>
-      <li className={styles.navigation__list__item}>
+      <li className={styles.navigation__list__item__special}>
           <input onKeyDown={onKeyPressHandler} ref={input} className={styles.navigation__list__item__input} value={`${text}`} onChange={handleText} type="text" placeholder="search for a content"></input>
-          <Link  to ={`/search?text=${text}`}>
-            <button 
-            //#endregion
+          <Link  className={styles.search} to ={`/search?text=${text}`}>
+            <button  className={styles.navigation__list__item__btn}
              disabled={!text}>
-              SEARCH
+              <img className={styles.navigation__list__item__icon}src={icon} alt="search_icon"></img>
             </button>
            
           </Link>

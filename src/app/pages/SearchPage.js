@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import UseFetchGenres from '../hooks/UseFetchGenres.js'
+import useFetchGenres from '../hooks/useFetchGenres.js'
 import { FilmContent } from '../components/forMovie_ShowsPage';
 import { Types } from '../components/forSearchPage'
 import { BaseLayout }  from '../layouts';
-import requests  from '../requests/requests';
 import Usetext from '../hooks/Usetext';
 import {NextBtn, PrevBtn} from '../components/loadingBtn';
+
 
 
 const SearchPage = () => {
@@ -13,17 +13,34 @@ const SearchPage = () => {
   let paramText = params.get('text');
   const [type, setType] = useState(`/search/multi`);
   const [page, setPage] = useState(1);
-  const [dataGenres] = UseFetchGenres(requests.genres);
-  console.log(type);
-
-  // let [dataSearch] = UseFetch(type);
+  const [genreType, setGenreType] = useState('');
+  const [dataGenres] = useFetchGenres(genreType);
+  const [genre, setGenre] = useState([]);
+  const [score, setScore] = useState('');
+  const [word, setWord] = useState('');
+ 
+  const handleScore= (e) => {
+    setScore(e.target.value);
+   }
+   const handleGenre = (e) => {
+    const newGenre = e.target.checked ? [...genre, e.target.id ] : genre.filter((g) => e.target.id !== g);
+    setGenre(newGenre);
+   }
+   const handleWord = (e) => {
+    setWord(e.target.value);
+   }
 
   useEffect(() => {
+    if (type == `/search/multi`) {
       setType(`/search/multi`);
+      
+    }
+      
   },[paramText, type])
 
-  const onHandleTypeSelect = (url) => {
+  const onHandleTypeSelect = (url, typeGenre) => {
     setType(url)
+    setGenreType(typeGenre);
   }
   const onHandleNext = () => {
     setPage(page +1)
@@ -32,21 +49,12 @@ const SearchPage = () => {
  const onHandlePrev = () => {
    setPage(page -1)
 }
-  const [genre, setGenre] = useState(false);
-  // useEffect(() => {
-  //   if (genre) {
-  //     dataSearch.filter
-  //   }
-   
-  // })
-  
-  const [selected, setSelected] = useState([]);
 
   return (
     <>
     <BaseLayout>
-    <Types  handleTypeSelect={onHandleTypeSelect} paramsText={paramText} page={page}/>
-    <FilmContent genres={dataGenres}  page={page} type={type}/>
+    <Types  handleTypeSelect={onHandleTypeSelect} paramsText={paramText} page={page} type={type}/>
+    <FilmContent genres={dataGenres}  page={page} type={type} isVote={handleScore} score={score} isGenre={genre} handleCheck={handleGenre} onHandleWord={handleWord} value={word}/>
     <PrevBtn handlePrev={onHandlePrev}/>
     <NextBtn handleNext={onHandleNext}/>
     </BaseLayout>
