@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './FilmContent.module.scss';
 import Filters from './Filters'
 import MoviesFilms from './MoviesFilms'
-import  useFetch from '../../hooks/useFetch'
+import  useFetch from '../../hooks/UseFetch'
 import Usetext from '../../hooks/Usetext';
 
 const FilmContent = ({genres, page, type, media, isVote, score, handleCheck, isGenre, onHandleWord, value, checked}) => {

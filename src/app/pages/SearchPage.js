@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import useFetchGenres from '../hooks/useFetchGenres.js'
+import useFetchGenres from '../hooks/UseFetchGenres.js'
 import { FilmContent } from '../components/forMovie_ShowsPage';
 import { Types } from '../components/forSearchPage'
 import { BaseLayout }  from '../layouts';

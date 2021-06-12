@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import useFetchGenres from '../hooks/useFetchGenres.js'
+import useFetchGenres from '../hooks/UseFetchGenres.js'
 import { BaseLayout }  from '../layouts'
 import { TypeListShows, FilmDiscover} from '../components/forMovie_ShowsPage';
 import {NextBtn, PrevBtn } from '../components/loadingBtn';
 import requests  from '../requests/requests'
-import  useFetch from '../hooks/useFetch'
+import  useFetch from '../hooks/UseFetch'
 
 const ShowsPage = () => {
 

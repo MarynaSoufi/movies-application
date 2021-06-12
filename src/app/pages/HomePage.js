@@ -1,13 +1,13 @@
 import React from 'react'
 import { BaseLayout }  from '../layouts'
 import { HomeFilms, Hero } from '../components/forHomePage'
-import useFetch from '../hooks/useFetch.js'
+import UseFetch from '../hooks/UseFetch.js'
 import requests  from '../requests/requests'
 
 const HomePage = () => {
- const [dataPopular] = useFetch(requests.popularMovies);
- const [dataTrending] = useFetch(requests.allTrending);
- const [dataNowPlaying] = useFetch(requests.nowPlaying);
+ const [dataPopular] = UseFetch(requests.popularMovies);
+ const [dataTrending] = UseFetch(requests.allTrending);
+ const [dataNowPlaying] = UseFetch(requests.nowPlaying);
   return (
    <>
    <BaseLayout>

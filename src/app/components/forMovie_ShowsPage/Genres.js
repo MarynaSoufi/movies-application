@@ -6,6 +6,7 @@ import { useThemeContext } from '../../contexts';
 const Genres = ({genres, handleCheck, isGenre ,checked}) => {
 
   const {isDarkMode} = useThemeContext();
+  
   return (
     <div className={classNames(styles.genres, `${isDarkMode ? styles.genres__dark : styles.genres}`)}>
       <p className={styles.genres__text}>Genres</p> 
