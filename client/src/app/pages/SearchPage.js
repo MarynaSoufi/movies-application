@@ -31,7 +31,7 @@ const SearchPage = () => {
    }
 
   useEffect(() => {
-    if (type == `/search/multi`) {
+    if (type === `/search/multi`) {
       setType(`/search/multi`);
       
     }

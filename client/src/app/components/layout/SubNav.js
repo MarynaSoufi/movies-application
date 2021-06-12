@@ -4,7 +4,6 @@ import {
 } from "react-router-dom";
 import * as Routes from '../../routes'
 import styles from './SubNav.module.scss';
-import account from '../../assets/person_black_24dp.svg'
 import icon from '../../assets/search.svg'
 import { useAuth } from '../../contexts/firebase/auth.context'
 

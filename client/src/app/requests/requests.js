@@ -1,6 +1,6 @@
 const API_KEY = process.env.REACT_APP_API_KEY;
 
-export default {
+const requests =  {
   popularMovies : `/movie/popular?api_key=${API_KEY}&language=en-US&page=1`,
   popularTv: `/tv/popular?api_key=${API_KEY}&language=en-US&page=1`,
   topRatedTv: `/tv/top_rated?api_key=${API_KEY}&language=en-US&page=1`,
@@ -18,3 +18,5 @@ export default {
   imageUrl: 'https://image.tmdb.org/t/p/w200',
   posterUrl: 'https://image.tmdb.org/t/p/w400'
 }
+
+export default requests;

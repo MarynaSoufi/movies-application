@@ -10,12 +10,12 @@ const ShowsPage = () => {
 
   const [page, setPage] = useState(1);
   const [type, setType] = useState('all');
-  const [media, setMedia] = useState('tv');
+  const [media] = useState('tv');
   const [dataGenres] = useFetchGenres(requests.genresTv);
   const [genre, setGenre] = useState([]);
   const [score, setScore] = useState('');
   const [word, setWord] = useState('');
-  const [checked, setChecked] = useState(false);
+  const [checked] = useState(false);
 
   let url = (`${type !== 'all' ? `/${type}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=${page}` : `/discover/tv?api_key=5efef7a95633dca0907412c3c500e759&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${[...genre]}&with_watch_monetization_types=flatrate`}`)
   const [data] = useFetch(url);
