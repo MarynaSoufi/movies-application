@@ -1,0 +1,50 @@
+@media (min-width: 290px) {
+  .cast__info__title {
+    font-size: .8rem;
+  }
+  .castitem {
+    width: 20%;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+}
+
+@media (min-width: 768px) {
+    .cast__info__title {
+      font-size: .8rem;
+    }
+    .castitem {
+      width: 8%;
+      margin-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+}
+
+
+@media (min-width: 1024px) {
+  .cast__info__title {
+    font-size: 1rem;
+  }
+
+  .castitem {
+    width: 15%;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media (min-width: 1450px) {
+  .cast__info__title {
+    font-size: 1rem;
+  }
+
+  .castitem {
+    width: 8%;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+}
