@@ -1,4 +1,3 @@
-import  AccountPage from './AccountPage';
 import DetailPage from './DetailPage';
 import HomePage from './HomePage';
 import MoviesPage from './MoviesPage';
@@ -10,7 +9,6 @@ import ShowsPage from './ShowsPage';
 
 
 export {
-  AccountPage,
   DetailPage,
   HomePage,
   MoviesPage,
