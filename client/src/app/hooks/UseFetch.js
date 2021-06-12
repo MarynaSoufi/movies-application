@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 
 const useFetch = (apiUrl) => {
   const [data, setData] = useState([]);   
-  useEffect(async () => {
-    console.log('GETTING NEW DATA');
+  useEffect( () => {
+    const getData = async () => {
       try {
         const res = await axios.get(apiUrl);
         setData(res.data.results);
@@ -12,9 +12,9 @@ const useFetch = (apiUrl) => {
       }catch (error) {
         console.error(error);
       }
-     
+    }
+    getData();
     }, [apiUrl]
-    
   )
   return [data]
  

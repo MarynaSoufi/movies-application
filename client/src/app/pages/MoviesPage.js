@@ -12,7 +12,7 @@ const MoviesPage = () => {
   const [type, setType] = useState('all');
   const [dataGenres] = useFetchGenres(requests.genresMovie);
   const [genre, setGenre] = useState([]);
-  const [media, setMedia] = useState('movie');
+  const [media] = useState('movie');
   const [score, setScore] = useState('');
   const [word, setWord] = useState('');
   const [checked, setChecked] = useState(false);

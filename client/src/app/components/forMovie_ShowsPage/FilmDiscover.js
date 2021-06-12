@@ -3,13 +3,10 @@ import styles from './FilmContent.module.scss';
 import Filters from './Filters'
 import MoviesFilms from './MoviesFilms'
 
-import Usetext from '../../hooks/Usetext';
+
 
 const FilmDiscover = ({data, genres, page, type, media, isVote, score, handleCheck, isGenre, onHandleWord, value, checked}) => {
-  // const params = Usetext();
-  // let paramText = params.get('text');
-  // let paramDiscover = params.get([isGenre]);
-  // console.log(paramDiscover);
+
 
   
     
