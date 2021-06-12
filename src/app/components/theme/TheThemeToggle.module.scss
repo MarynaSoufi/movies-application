@@ -1,0 +1,28 @@
+
+@media(min-width: 290px) {
+  .toggle {
+    width: 100%;
+    margin: 1rem 0;
+    
+  }
+  .btn {
+    padding: .5rem 1rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    outline: none;
+    border: 1px solid transparent;
+  }
+}
+@media(min-width: 768px) {
+  .toggle {
+    width: 10%;
+    
+  }
+  .btn {
+    padding: .5rem 1rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    outline: none;
+    border: 1px solid transparent;
+  }
+}

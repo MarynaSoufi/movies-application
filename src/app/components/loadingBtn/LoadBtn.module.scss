@@ -1,0 +1,29 @@
+.btn {
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: #87CED9;
+  color: white;
+  font-size: 1.125rem;
+  font-family: 'Roboto';
+  margin-bottom: 4rem;
+  margin-right: 2rem;
+  &__dark {
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #032541;
+    color: white;
+    font-size: 1.125rem;
+    font-family: 'Roboto';
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+  }
+}
+.btn__holder {
+  display: flex;
+  width: 10rem;
+  background-color: #000;
+}
