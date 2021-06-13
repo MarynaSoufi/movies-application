@@ -1,8 +1,35 @@
+@media(min-width: 280px) {
+  .types {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 102.625rem;
+    &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+    &__item {
+      
+        font-weight: bold;
+        font-family: 'Roboto';
+        font-size: 1.375rem;
+        cursor: pointer;
+      &__active {
+        color: red;
+      }
+      
+    }
+    }
+  }
+}
 
+@media(min-width: 1024px) {
+  
 .types {
   margin: 0 auto;
   padding: 0 8.75rem;
-  width: 102.625rem;
+  max-width: 102.625rem;
   &__list {
   display: flex;
   justify-content: space-between;
@@ -21,4 +48,5 @@
     
   }
   }
+}
 }
