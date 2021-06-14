@@ -1,3 +1,14 @@
+# login
+email: haley_windler88@gmail.com
+password: w84pgmGent
+
+email: renee_gibson@hotmail.com
+password: w84pgmGent
+
+email: jensen3@yahoo.com
+password: w84pgmGent
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
